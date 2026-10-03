@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Boyfriend Day, Sohneya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Pacifico&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#ffe3ee;--bg2:#ffc9dd;--card:#fffafc;--ink:#5a2440;--soft:#8a5470;--rose:#c2185b;--rose2:#ff5c9a;--gold:#f0a04b;--line:#ffd0e2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#3a1428;--bg2:#2a0e1e;--card:#4a1c34;--ink:#ffe6f0;--soft:#e5aac4;--line:#6b2c4c}}
+:root[data-theme="dark"]{--bg1:#3a1428;--bg2:#2a0e1e;--card:#4a1c34;--ink:#ffe6f0;--soft:#e5aac4;--line:#6b2c4c}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:linear-gradient(160deg,var(--bg1),var(--bg2));color:var(--ink);font-family:'Quicksand',system-ui,sans-serif;overflow:hidden;position:relative}
+#app{height:100%;position:relative}
+.screen{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;padding:20px 18px;text-align:center;overflow-y:auto}
+.screen.on{display:flex;animation:in .45s ease}
+@keyframes in{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+h1,h2{font-family:'Pacifico',cursive;font-weight:400;margin:.2em 0;line-height:1.25;color:var(--rose)}
+h1{font-size:2rem}h2{font-size:1.6rem}
+p{margin:.4em 0;color:var(--soft);line-height:1.5}
+.pill{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:.78rem;font-weight:700;color:var(--soft);display:inline-block;margin:6px 0}
+.btn{font:700 .95rem 'Quicksand',sans-serif;border:0;border-radius:99px;padding:13px 26px;margin:10px 6px 0;color:#fff;background:linear-gradient(135deg,var(--rose),var(--rose2));box-shadow:0 6px 16px rgba(194,24,91,.3);cursor:pointer;touch-action:manipulation}
+.btn.ghost{background:var(--card);color:var(--rose);box-shadow:none;border:1.5px solid var(--rose2)}
+.btn:focus-visible,.pol:focus-visible,.seal:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+.card{background:var(--card);border-radius:24px;padding:22px 20px;width:100%;max-width:340px;box-shadow:0 10px 30px rgba(194,24,91,.15)}
+.char{width:150px;height:auto}
+.fall{position:fixed;top:-20px;pointer-events:none;z-index:9;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:.6}}
+.pair{display:flex;gap:6px;justify-content:center;align-items:flex-end}
+.two{display:flex;gap:10px;justify-content:center;align-items:center;margin-bottom:10px}
+#noWrap{position:relative;display:inline-block}
+#no{transition:transform .25s}
+.rs{min-height:150px;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;user-select:none}
+.rs .t{font-size:1.05rem;font-weight:700;color:var(--ink);margin-top:8px}
+.dots{display:flex;gap:6px;justify-content:center;margin-top:12px}
+.dots i{width:8px;height:8px;border-radius:50%;background:var(--line)}.dots i.a{background:var(--rose2)}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:16px 14px;width:100%;max-width:340px;margin:10px 0}
+.pol{background:#fff;padding:8px 8px 6px;border-radius:4px;box-shadow:0 6px 14px rgba(0,0,0,.18);cursor:pointer;border:0;font:inherit;color:#5a2440}
+.pol:nth-child(odd){transform:rotate(-3deg)}.pol:nth-child(even){transform:rotate(3deg)}
+.pol .ph{aspect-ratio:1;border-radius:2px;background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;font-size:2.2rem}
+.pol em{display:block;font:italic 600 .78rem 'Quicksand',sans-serif;padding:6px 0 2px}
+.env{width:100%;max-width:340px;background:#fffdf8;border-radius:10px;padding:26px 18px 22px;text-align:left;border:6px solid transparent;border-image:repeating-linear-gradient(135deg,#d6455d 0 12px,#fffdf8 12px 24px,#3d6fb5 24px 36px,#fffdf8 36px 48px) 6;color:#4a3a3a}
+.env b{color:#3d6fb5}
+.letter{width:100%;max-width:350px;max-height:78vh;overflow-y:auto;background:#fffdf8;border-radius:12px;padding:20px;text-align:left;color:#4a3a3a;line-height:1.65;font-size:.93rem;box-shadow:0 10px 30px rgba(194,24,91,.18)}
+.letter p{color:#4a3a3a}
+.sig{font-family:'Caveat',cursive;font-size:1.7rem;color:var(--rose);text-align:right}
+.cert{background:var(--card);border:2px dashed var(--gold);border-radius:18px;padding:20px 16px;width:100%;max-width:340px}
+.cert h2{color:var(--ink);font-size:1.35rem}
+.name{font-family:'Pacifico',cursive;font-size:2rem;color:var(--rose)}
+.tags span{display:inline-block;background:var(--bg1);border:1px solid var(--line);border-radius:99px;padding:5px 12px;margin:3px;font-size:.78rem;font-weight:700}
+.seal{width:92px;height:92px;border-radius:50%;margin:12px auto 4px;border:0;cursor:pointer;background:radial-gradient(circle,#ffe0a8,#f0a04b);color:#7a3b00;font:700 .72rem 'Quicksand',sans-serif;box-shadow:0 4px 12px rgba(240,160,75,.5)}
+.seal.done{background:radial-gradient(circle,#ff8fb8,#c2185b);color:#fff;font-size:1.9rem;animation:pop .5s}
+@keyframes pop{0%{transform:scale(2) rotate(-25deg);opacity:0}100%{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.screen.on,.seal.done{animation:none}.fall{display:none}}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- 0 intro -->
+<section class="screen on">
+  <div class="two" id="c0"></div>
+  <span class="pill">To my amazing boyfriend 💙</span>
+  <h1>Happy Boyfriend Day <span class="to"></span> 💕</h1>
+  <p>Every day with you feels like my favorite adventure.</p>
+  <span class="pill">⏳ Loving you for <b id="days"></b> days</span>
+  <button class="btn" data-go>Begin our journey</button>
+</section>
+
+<!-- 1 do you love me -->
+<section class="screen">
+  <p style="font-size:1.4rem;margin:0">? ? ?</p>
+  <div class="two" id="c1"></div>
+  <h2>Do you love me?</h2>
+  <p id="hint">There's only one right answer! 😏</p>
+  <div><button class="btn" data-go>YES! Of course! 🥰</button>
+  <span id="noWrap"><button class="btn ghost" id="no">NO 😛</button></span></div>
+</section>
+
+<!-- 2 reasons -->
+<section class="screen">
+  <span class="pill">✨ Why you're my favorite ✨</span>
+  <h2>Reasons why I love you 💗</h2>
+  <div class="card rs" id="rs" tabindex="0" role="button" aria-label="Next reason">
+    <svg class="char" id="rc" viewBox="0 0 120 100"></svg>
+    <div class="t" id="rt"></div>
+    <p style="font-size:.8rem;margin-top:12px">👆 Tap for the next one</p>
+  </div>
+  <div class="dots" id="dots"></div>
+  <button class="btn" id="rnext" data-go style="display:none">Continue 🪄</button>
+</section>
+
+<!-- 3 memories -->
+<section class="screen">
+  <span class="pill">Our captured moments</span>
+  <h2>Sweet memories with you 📸</h2>
+  <p style="font-size:.85rem">Tap a polaroid to put your own photo in it.</p>
+  <div class="board" id="board"></div>
+  <button class="btn" data-go>Read my love letter 💌</button>
+  <input type="file" accept="image/*" id="file" hidden>
+</section>
+
+<!-- 4 envelope -->
+<section class="screen">
+  <div class="env">
+    <div style="font-size:.7rem;font-weight:700;letter-spacing:.06em;color:#3d6fb5;margin-bottom:12px">✈ AIR MAIL</div>
+    <div>To: <b class="to"></b> (The World's Best Boyfriend)</div>
+    <div>Address: The safest place in your arms</div>
+    <div>From: <b class="from"></b> (Your girl)</div>
+  </div>
+  <button class="btn" data-go>Tap to break seal &amp; open letter 💌</button>
+</section>
+
+<!-- 5 letter -->
+<section class="screen">
+  <div class="letter">
+    <p>My dearest <b class="to"></b>,</p>
+    <p>Before you, I didn't know a person could feel like home. You're calm when I'm chaotic, you laugh at my silly jokes, and somehow you always know when I need a hug before I say a word.</p>
+    <p>Thank you for your patience, your warmth, and for choosing me every single day. You make ordinary moments feel like my favorite memories.</p>
+    <p>Aaj tumhara din hai, toh bas itna: I'm proud of you, I'm always on your side, and I'll keep loving you more with every sunrise. 🌅</p>
+    <div class="sig">Forever yours,<br><span class="from"></span></div>
+  </div>
+  <button class="btn" data-go>Continue to your award 🏆</button>
+</section>
+
+<!-- 6 award -->
+<section class="screen">
+  <div class="cert">
+    <span class="pill">★ Official certificate of love ★</span>
+    <h2>World's Best Boyfriend Award 🏆</h2>
+    <p style="font-size:.78rem;font-weight:700">PROUDLY PRESENTED TO</p>
+    <div class="name to"></div>
+    <p style="font-size:.88rem">For the warmest hugs, the loudest laughs, and being my safe place in this whole universe.</p>
+    <div class="tags"><span>💗 100% best hugs</span><span>🛡️ Official protector</span><span>👑 King of my heart</span></div>
+    <button class="seal" id="seal">Stamp official seal</button>
+    <p id="sealtxt" style="font-size:.78rem;margin:0">Certified by <b class="from"></b></p>
+  </div>
+  <div><button class="btn" id="shower">Shower with love ✨</button>
+  <button class="btn ghost" id="again">↻ Restart</button></div>
+</section>
+
+</div>
+
+<script>
+// ✏️ Edit these three lines to change names / start date
+var TO = "Sohneya 😚🧿", FROM = "Motto ❤️", START = "2025-01-01";
+
+var $ = function(s,r){return (r||document).querySelector(s)}, $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+$$('.to').forEach(function(e){e.textContent = TO});
+$$('.from').forEach(function(e){e.textContent = FROM});
+document.title = "Happy Boyfriend Day, " + TO;
+$('#days').textContent = Math.max(1, Math.floor((Date.now() - new Date(START)) / 864e5)).toLocaleString();
+
+// original little characters
+function face(c, ear, big){
+  var e = ear === 'bun'
+    ? '<ellipse cx="38" cy="14" rx="9" ry="20" fill="'+c+'"/><ellipse cx="82" cy="14" rx="9" ry="20" fill="'+c+'"/><ellipse cx="38" cy="16" rx="4" ry="12" fill="#ffb3cd"/><ellipse cx="82" cy="16" rx="4" ry="12" fill="#ffb3cd"/>'
+    : '<polygon points="26,44 30,10 54,32" fill="'+c+'"/><polygon points="94,44 90,10 66,32" fill="'+c+'"/>';
+  return '<g>'+e+'<circle cx="60" cy="62" r="38" fill="'+c+'"/><circle cx="47" cy="60" r="4" fill="#4a2a3a"/><circle cx="73" cy="60" r="4" fill="#4a2a3a"/><circle cx="38" cy="72" r="6" fill="#ff9ab8" opacity=".7"/><circle cx="82" cy="72" r="6" fill="#ff9ab8" opacity=".7"/><path d="M52 72 Q60 80 68 72" stroke="#4a2a3a" stroke-width="3" fill="none" stroke-linecap="round"/></g>';
+}
+function svg(w){return '<svg class="char" style="width:'+(w||120)+'px" viewBox="0 0 120 100">'}
+function pairSvg(){
+  return '<svg class="char" viewBox="0 0 240 100"><g transform="translate(-6,0) scale(.95)">'+face('#ffd9e6','bun')+'</g><g transform="translate(116,0) scale(.95)">'+face('#cfe0ff','cat')+'</g><text x="112" y="40" font-size="20" text-anchor="middle">💕</text></svg>';
+}
+['c0','c1'].forEach(function(id){ $('#'+id).innerHTML = pairSvg(); });
+$('#rc').innerHTML = face('#ffd9e6','bun');
+
+// flow
+var screens = $$('.screen'), cur = 0;
+function go(n){
+  screens[cur].classList.remove('on'); cur = n; screens[cur].classList.add('on');
+  if(n===6) burst(40);
+}
+$$('[data-go]').forEach(function(b){ b.addEventListener('click', function(){ go(cur+1); burst(14); }); });
+
+// confetti
+function burst(n){
+  var cols=['#ff5c9a','#ffb3cd','#f0a04b','#7aa8ff','#fff'];
+  for(var i=0;i<n;i++){
+    var d=document.createElement('div'); d.className='fall';
+    var s=6+Math.random()*8;
+    d.style.cssText='left:'+Math.random()*100+'vw;width:'+s+'px;height:'+s*1.4+'px;background:'+cols[i%5]+';border-radius:'+(i%2?'50%':'2px')+';animation-duration:'+(2.5+Math.random()*3)+'s;animation-delay:'+Math.random()*.6+'s';
+    document.body.appendChild(d); setTimeout(function(x){x.remove()}, 6500, d);
+  }
+}
+setInterval(function(){ burst(2) }, 1800);
+
+// "No" button runs away
+var tries = 0, no = $('#no');
+function dodge(e){
+  e.preventDefault(); tries++;
+  if(tries > 2){ no.textContent = "Can't click! 🚫"; $('#hint').textContent = "Told you, only one right answer 😌"; }
+  no.style.transform = 'translate('+(Math.random()*120-60)+'px,'+(Math.random()*90-45)+'px)';
+}
+no.addEventListener('pointerenter', dodge); no.addEventListener('click', dodge);
+
+// reasons
+var R = ["How safe, protected, and completely at home I feel whenever I'm in your arms.",
+ "Your goofy laugh that can fix my worst day in two seconds.",
+ "The way you make me feel like the most cherished girl in every room.",
+ "How you always listen, even when I'm overthinking everything.",
+ "And a million more reasons: you make my whole world brighter just by being in it."];
+var ri = 0, dots = $('#dots');
+R.forEach(function(){ dots.appendChild(document.createElement('i')) });
+function showR(){
+  $('#rt').textContent = R[ri];
+  $$('i',dots).forEach(function(d,i){ d.className = i===ri?'a':'' });
+  $('#rc').innerHTML = face(ri%2?'#cfe0ff':'#ffd9e6', ri%2?'cat':'bun');
+  if(ri===R.length-1){ $('#rnext').style.display='inline-block'; }
+}
+function nextR(){ if(ri < R.length-1){ ri++; showR(); burst(6); } }
+$('#rs').addEventListener('click', nextR);
+$('#rs').addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); nextR(); } });
+showR();
+
+// polaroids (photos stay in your browser only)
+var P = [["🤝","Holding hands"],["🌅","My favorite human"],["💞","Adventures with you"],["🫶","Forever & always"]], board = $('#board'), pick = null;
+P.forEach(function(p){
+  var b = document.createElement('button'); b.className='pol';
+  b.innerHTML = '<div class="ph" style="background-image:linear-gradient(135deg,#ffd0e2,#ffb347)">'+p[0]+'</div><em>"'+p[1]+'"</em>';
+  b.addEventListener('click', function(){ pick = $('.ph', b); $('#file').click(); });
+  board.appendChild(b);
+});
+$('#file').addEventListener('change', function(e){
+  var f = e.target.files[0]; if(!f || !pick) return;
+  var r = new FileReader();
+  r.onload = function(){ pick.style.backgroundImage = 'url('+r.result+')'; pick.textContent = ''; };
+  r.readAsDataURL(f); e.target.value = '';
+});
+
+// award
+$('#seal').addEventListener('click', function(){
+  var s = $('#seal'); s.classList.add('done'); s.textContent = '💗'; burst(50);
+});
+$('#shower').addEventListener('click', function(){ burst(70) });
+$('#again').addEventListener('click', function(){
+  ri = 0; showR(); $('#rnext').style.display='none';
+  tries = 0; no.textContent = 'NO 😛'; no.style.transform = ''; $('#hint').textContent = "There's only one right answer! 😏";
+  var s = $('#seal'); s.classList.remove('done'); s.textContent = 'Stamp official seal';
+  go(0);
+});
+</script>
+</body>
+</html>
